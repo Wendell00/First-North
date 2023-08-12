@@ -1,0 +1,333 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mz9JQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7myjJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7myRJQVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/jost/v14/92zPtBhPNqw79Ij1E865zBUv7mx9IgVG.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/signika/v25/vEF72_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX4zNpD8E4ASzH1r9szuYzQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Signika';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/signika/v25/vEF72_JTCgwQ5ejvMV0Ox_Kg1UwJ0tKfX4zNpD8E4ASzH1r9XzyYzQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyeMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuOKfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfMZg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTDppqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTD-JqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTDypqqFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTDJp2qFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Karla';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/karla/v30/qkBIXvYC6trAT55ZBi1ueQVIjQTDH52qFA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Vollkorn';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/vollkorn/v22/0ybuGDoxxrvAnPhYGxksckM2WMCpRjDj-DKhXWmZ.ttf) format('truetype');
+}
+.nav-info-container {
+  width: 100vw;
+  height: 40px;
+  background-color: #940000;
+  justify-content: center;
+  display: none;
+}
+.nav-info-container.scroll-fixed {
+  margin-bottom: 110px;
+}
+@media screen and (min-width: 768px) {
+  .nav-info-container {
+    display: flex;
+  }
+}
+.nav-info-container .nav-info {
+  width: 100%;
+  height: 100%;
+  max-width: 1225px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  box-sizing: border-box;
+}
+.nav-info-container .nav-info .i-inf {
+  margin-right: 8px;
+  color: white;
+  font-size: 0.8em;
+}
+@media screen and (min-width: 510px) {
+  .nav-info-container .nav-info .i-inf {
+    font-size: 1em;
+  }
+}
+.nav-info-container .nav-info .text-nav-info {
+  color: white;
+  font-size: 0.8em;
+  margin-right: 8px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+}
+@media screen and (min-width: 510px) {
+  .nav-info-container .nav-info .text-nav-info {
+    font-size: 1em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .nav-info-container .nav-info {
+    padding-right: 0px;
+  }
+}
+.nav-info-container .nav-info .i-social {
+  color: white;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-left: 15px;
+}
+@media screen and (min-width: 510px) {
+  .nav-info-container .nav-info .i-social {
+    font-size: 1.5em;
+  }
+}
+.nav-info-container .nav-info .i-social.i-social2 {
+  margin-right: 24px;
+}
+@media screen and (min-width: 1225px) {
+  .nav-info-container .nav-info .i-social.i-social2 {
+    margin-right: 0px;
+  }
+}
+nav {
+  width: 100vw;
+  height: 180px;
+  background-color: white;
+}
+nav img {
+  height: 280px;
+  width: auto;
+}
+.whatsapp {
+  width: 64px;
+  height: 64px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+}
+.whatsapp img {
+  width: 100%;
+  height: 100%;
+}
+.whatsapp img:hover {
+  opacity: 0.8;
+}
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  transition: 0.2s;
+  background-color: white;
+}

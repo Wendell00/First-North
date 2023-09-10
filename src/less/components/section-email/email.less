@@ -1,0 +1,100 @@
+.email {
+    width: 100vw;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+
+    .email-title {
+        height: auto;
+        width: auto;
+      //  background-color: aqua;
+        display: flex;
+        justify-content: center;
+        
+        h3 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2.75rem;
+            padding: 10px;
+            color: rgb(54, 57, 204);
+            border-bottom: 2px solid rgb(201, 47, 47);
+
+            label {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .container-email {
+        height: auto;
+        width: 800px;
+        background-color: rgb(216, 43, 43);
+        border-radius: 10px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.75rem;
+            font-weight: 100;
+            color: #ffffffce;
+        }
+
+        .inputs {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        input {
+            width: 98%;
+            height: 30px;
+            padding: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 0.85rem;
+
+            &::placeholder {
+                font-size: 0.88rem;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        textarea {
+            padding: 5px;
+            resize: none;
+            border-radius: 5px;
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                font-size: 0.88rem;
+            }
+        }
+
+        button {
+            height: 60px;
+            font-size: 1.2rem;
+            border-radius: 10px;
+            border: none;
+            margin-top: 15px;
+            background-color: rgb(54, 57, 204);
+            color: #fff;
+
+            &:hover {
+                background-color: rgb(92, 95, 236);
+                // rgba(54, 57, 204, 0.747)
+                // rgb(201, 47, 47)
+                cursor: pointer;
+            }
+        }
+    }
+}

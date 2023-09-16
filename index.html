@@ -262,20 +262,31 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-email">
+        <path fill="#1E201F" fill-opacity="1" d="M0,224L120,224C240,224,480,224,720,240C960,256,1200,288,1320,304L1440,320L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
+    </svg>  
     <section class="email">
-        <div class="email-title">
-            <h3>Entre em <label for="">contato</label></h3>
+        <div class="email-h3-container">
+            <h3>Contato</h3>
         </div>
-        <div class="container-email">
-            <p>Nome</p>
-            <label for="name"><input type="text" name="" id="lbl-email" placeholder="Nome" class="inputs"></label>
-            <p>E-mail</p>
-            <label for="email"><input type="email" name="" id="lbl-email" placeholder="E-mail" class="inputs"></label>
-            <p>Telefone</p>
-            <label for="Telefone"><input type="tel" name="" id="lbl-email" placeholder="Telefone" class="inputs"></label>
-            <p>Mensagem</p>
-            <textarea name="texto" id="" cols="30" rows="10" placeholder="Mensagem" class="inputs"></textarea>
+        <div class="e-mail-form">
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">Nome*</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">E-mail*</label>
+            </div>
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off">
+                <label for="name">Telefone*</label>
+            </div>
+            <div class="inputGroup">
+                <textarea required="" autocomplete="off" cols="30" rows="5"></textarea>
+                <label for="name">Mensagem*</label>
+            </div>
             <button>Enviar</button>
         </div>
     </section>

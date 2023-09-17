@@ -27,9 +27,8 @@
 @import "./components/nav/nav.less"; // Nav
 @import "./components/footer/footer.less"; // Whatsapp Icon
 @import "./components/whatsapp/whatsapp.less"; // Whatsapp Icon
-@import "./components/servicos/servicos.less"; // Serviços 
 @import "./components/section-frota/frota.less"; // Frotas
-@import "./components/section-conheca/conheca.less"; // Conheça
+@import "./components/section-conheca/conheca.less"; // Serviços
 @import "./components/section-email/email.less"; // Email
 @import "./components/vantagens/vantagens.less"; // Vantagens
 @import "./components/clientes/clientes.less"; // Clientes
@@ -40,4 +39,10 @@ body{
   overflow-x: hidden;
   transition: 0.2s;
   background-color: white;
+}
+
+.navbar.fixed{
+  position: fixed;
+  top: 0px;
+  z-index: 5;
 }

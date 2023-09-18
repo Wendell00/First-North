@@ -13,54 +13,147 @@
 //     offset: '10%'
 // })
 
-var nasc1 = document.querySelector('.main-p1')
+var mainText = document.querySelector('.main-textos')
 window.addEventListener('load', function() {
-    nasc1.classList.add('animate')
+    mainText.classList.add('animate')
 });
 
-var nasc2 = document.querySelector('.main-p2')
+var mainBtn = document.querySelector('.main-buttons')
 window.addEventListener('load', function() {
-    nasc2.classList.add('animate')
+    mainBtn.classList.add('animate')
 });
 
-var sobre1 = new Waypoint({
-    element: document.querySelector('.texto-sobre'),
-    handler: function(direction) {
-      this.element.classList.add('animate')
-    },
-    offset: '75%'
+var sobreText1 = new Waypoint({
+  element: document.querySelector('.servicos-content-text-1'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
 })
 
-var sobre2 = new Waypoint({
-    element: document.querySelector('.swiper'),
-    handler: function(direction) {
-      this.element.classList.add('animate')
-    },
-    offset: '75%'
+var sobreText2 = new Waypoint({
+  element: document.querySelector('.servicos-content-text-2'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
 })
 
-var formTexto = new Waypoint({
-    element: document.querySelector('.form-textos'),
-    handler: function(direction) {
-      this.element.classList.add('animate')
-    },
-    offset: '75%'
+var sobreText3 = new Waypoint({
+  element: document.querySelector('.servicos-content-text-3'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
 })
 
-var servicoContainer = new Waypoint({
-    element: document.querySelector('.servico-container'),
-    handler: function(direction) {
-      this.element.classList.add('animate')
-    },
-    offset: '75%'
+var frotaCard1 = new Waypoint({
+  element: document.querySelector('.frota-li-1'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
 })
 
-var treinos = new Waypoint({
-    element: document.querySelector('.treino-ul'),
-    handler: function(direction) {
-      this.element.classList.add('animate')
-    },
-    offset: '75%'
+var frotaCard2 = new Waypoint({
+  element: document.querySelector('.frota-li-2'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 300);
+  },
+  offset: '75%'
+})
+
+var frotaCard3 = new Waypoint({
+  element: document.querySelector('.frota-li-3'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 600);
+  },
+  offset: '75%'
+})
+
+var frotaCard4 = new Waypoint({
+  element: document.querySelector('.frota-li-4'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 900);
+  },
+  offset: '75%'
+})
+
+var vantagens = new Waypoint({
+  element: document.querySelector('.vantagens-container'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
+})
+
+var certificacoesCard1 = new Waypoint({
+  element: document.querySelector('.certificacoes-li-1'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
+})
+
+var certificacoesCard2 = new Waypoint({
+  element: document.querySelector('.certificacoes-li-2'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 300);
+  },
+  offset: '75%'
+})
+
+var certificacoesCard3 = new Waypoint({
+  element: document.querySelector('.certificacoes-li-3'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 600);
+  },
+  offset: '75%'
+})
+
+var certificacoesCard4 = new Waypoint({
+  element: document.querySelector('.certificacoes-li-4'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 900);
+  },
+  offset: '75%'
+})
+
+var certificacoesCard5 = new Waypoint({
+  element: document.querySelector('.certificacoes-li-5'),
+  handler: function(direction) {
+    let elemento = this.element
+    setTimeout(function() {
+      elemento.classList.add('animate')
+    }, 1200);
+  },
+  offset: '75%'
+})
+
+var clientes = new Waypoint({
+  element: document.querySelector('.contain-clientes'),
+  handler: function(direction) {
+    this.element.classList.add('animate')
+  },
+  offset: '75%'
 })
 
 

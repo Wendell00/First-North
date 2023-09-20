@@ -988,7 +988,7 @@ footer #elements-footer-right .footer-redes p {
 .svg-frota {
   position: relative;
   z-index: 3;
-  max-width: 1440px;
+  max-width: 100%;
   width: 100vw;
   height: auto;
   margin: 0 auto;
@@ -1249,7 +1249,7 @@ footer #elements-footer-right .footer-redes p {
 .svg-email {
   position: relative;
   z-index: 3;
-  max-width: 1440px;
+  max-width: 100%;
   width: 100vw;
   height: auto;
   margin: 0 auto;
@@ -1441,7 +1441,7 @@ footer #elements-footer-right .footer-redes p {
 .svg-certificacoes {
   position: relative;
   z-index: 4;
-  max-width: 1440px;
+  max-width: 100%;
   width: 100vw;
   height: auto;
   margin: 0 auto;

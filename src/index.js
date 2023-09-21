@@ -1,3 +1,5 @@
+const body = document.querySelector("body")
+
 window.addEventListener('scroll', function(){
   const navbar = document.querySelector('.navbar');
   const navinfo = document.querySelector('.nav-info-container')

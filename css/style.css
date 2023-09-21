@@ -495,17 +495,22 @@ nav {
   justify-content: center;
   width: 100vw;
   background-color: white;
-  z-index: 999;
+  z-index: 10;
   padding: 5px 0;
   box-sizing: border-box;
   border-bottom: 2px solid #1E201F;
 }
 nav .nav-1220 {
   height: 100%;
-  width: 1220px;
+  width: 95%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media screen and (min-width: 1220px) {
+  nav .nav-1220 {
+    width: 1220px;
+  }
 }
 nav .nav-1220 img {
   width: auto;
@@ -524,6 +529,12 @@ nav .nav-1220 ul li a {
   font-size: 1.1em;
   font-family: 'Karla', sans-serif;
   font-weight: 600;
+  display: none;
+}
+@media screen and (min-width: 1020px) {
+  nav .nav-1220 ul li a {
+    display: flex;
+  }
 }
 nav .nav-1220 ul li .btn-call {
   background-color: #940000;
@@ -533,15 +544,207 @@ nav .nav-1220 ul li .btn-call {
   box-sizing: border-box;
   text-decoration: none;
   border-radius: 8px;
-  display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-family: 'Karla', sans-serif;
   font-weight: 700;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  nav .nav-1220 ul li .btn-call {
+    display: flex;
+  }
 }
 nav .nav-1220 ul li .btn-call i {
   margin-right: 8px;
+}
+nav .nav-1220 ul .menu-icon {
+  display: block;
+  font-size: 1.8em;
+  color: #1b676b;
+  margin-right: 30px;
+  cursor: pointer;
+}
+@media screen and (min-width: 636px) {
+  nav .nav-1220 ul .menu-icon {
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1020px) {
+  nav .nav-1220 ul .menu-icon {
+    display: none;
+  }
+}
+aside {
+  position: fixed;
+  z-index: 15;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: end;
+}
+aside .aside-child {
+  width: 400px;
+  height: 100vh;
+  background-color: #ffffff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+@media screen and (max-width: 301.8px) {
+  aside .aside-child {
+    width: 100vw;
+  }
+}
+aside .aside-child .aside-x {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  font-size: 1.4em;
+  color: black;
+  cursor: pointer;
+}
+aside .aside-child ul {
+  display: flex;
+  width: 100%;
+  height: auto;
+  align-items: start;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-left: 25px;
+}
+aside .aside-child ul .aside-a {
+  text-decoration: none;
+  color: #88c425;
+  font-size: 1em;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  margin-bottom: 35px;
+  width: 100%;
+  cursor: pointer;
+}
+aside .aside-child ul .aside-a .imgSeta {
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin-right: 120px;
+  transform: rotate(90deg);
+}
+aside .aside-child ul .aside-a .aside-servicos-box {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  z-index: 10;
+  padding: 6px 12px;
+}
+aside .aside-child ul .aside-a .aside-servicos-box ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+aside .aside-child ul .aside-a .aside-servicos-box ul a {
+  margin-bottom: 25px;
+  text-decoration: none;
+}
+aside .aside-child ul .aside-a .aside-servicos-box ul a:last-child {
+  margin-bottom: 0;
+}
+aside .aside-child ul .aside-a .aside-servicos-box ul a li {
+  list-style: none;
+  text-align: start;
+  color: #88c425;
+  font-size: 1em;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+}
+aside .aside-child ul .aside-a .aside-servicos-box ul a li:hover {
+  color: #1b676b;
+}
+aside .aside-child .a-call {
+  width: 200px;
+  height: 60px;
+  background-color: #88c425;
+  padding: 4px;
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 10px;
+}
+aside .aside-child .a-call .btn-call {
+  width: 100%;
+  height: 100%;
+  min-height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background-color: #88c425;
+}
+aside .aside-child .a-call .btn-call i {
+  margin-right: 8px;
+  color: white;
+}
+aside .aside-child .a-call .btn-call p {
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+}
+aside .aside-child .aside-footer {
+  width: 100%;
+  height: 200px;
+  background-color: #1b676b;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+aside .aside-child .aside-footer .p1 {
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+aside .aside-child .aside-footer .p1 p {
+  color: white;
+  font-size: 1.1em;
+  margin-right: 8px;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+}
+aside .aside-child .aside-footer .p1 i {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+aside .aside-child .aside-footer .p2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  flex-direction: row;
+}
+aside .aside-child .aside-footer .p2 a {
+  text-decoration: none;
+}
+aside .aside-child .aside-footer .p2 a:first-child {
+  margin-right: 25px;
+}
+aside .aside-child .aside-footer .p2 a i {
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
 }
 footer {
   position: relative;
@@ -1457,4 +1660,13 @@ body {
   position: fixed;
   top: 0px;
   z-index: 5;
+}
+.height-100vh {
+  height: 100vh;
+}
+.display-toggle {
+  display: none !important;
+}
+.overflow-toggle {
+  overflow-y: hidden;
 }

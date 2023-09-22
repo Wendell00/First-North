@@ -574,10 +574,14 @@ nav .nav-1220 ul {
 nav .nav-1220 ul li a {
   text-decoration: none;
   color: #1E201F;
-  font-size: 1.1em;
+  font-size: 1.15em;
   font-family: 'Karla', sans-serif;
   font-weight: 600;
   display: none;
+}
+nav .nav-1220 ul li a:hover {
+  color: #0a0a4c;
+  border-bottom: 1px solid #940000;
 }
 @media screen and (min-width: 1020px) {
   nav .nav-1220 ul li a {
@@ -779,7 +783,7 @@ footer {
 footer .content-footer {
   position: relative;
   height: 62%;
-  width: 1200px;
+  width: 1220px;
   background-color: #1E201F;
   display: flex;
   justify-content: space-between;
@@ -1039,7 +1043,7 @@ footer #elements-footer-right .footer-redes p {
 .copyright {
   font-family: 'Karla', sans-serif;
   font-weight: 500;
-  width: 1200px;
+  width: 1220px;
   color: #fff;
   margin-top: 30px;
   align-self: center;
@@ -1069,7 +1073,7 @@ footer #elements-footer-right .footer-redes p {
 .line-white {
   width: 1220px;
   height: 1px;
-  background-color: #ffffff;
+  background-color: rgba(230, 230, 230, 0.459);
   border-radius: 10px;
   margin: 0 auto;
   position: absolute;
@@ -1264,20 +1268,37 @@ footer #elements-footer-right .footer-redes p {
 }
 .section-servicos .servicos-cards-container .servicos-content {
   width: 100%;
-  height: 595px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+  flex-direction: column;
+}
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content {
+    flex-direction: row;
+    height: 595px;
+  }
 }
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-card {
-  width: 510px;
-  height: 510px;
+  width: 420px;
+  height: 420px;
   border-radius: 20px;
   border: 2px solid #0a0a4c;
   overflow: visible;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  order: 1;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content .servicos-content-card {
+    order: 0;
+    width: 510px;
+    height: 510px;
+    margin: 0;
+  }
 }
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-card img {
   position: absolute;
@@ -1286,6 +1307,12 @@ footer #elements-footer-right .footer-redes p {
   bottom: 40px;
   right: -113px;
   z-index: 4;
+  display: none;
+}
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content .servicos-content-card img {
+    display: block;
+  }
 }
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-text {
   width: calc(100% - 510px);
@@ -1294,6 +1321,12 @@ footer #elements-footer-right .footer-redes p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  order: 2;
+}
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content .servicos-content-text {
+    order: 0;
+  }
 }
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-text .servicos-content-title {
   display: flex;

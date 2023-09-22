@@ -1262,20 +1262,27 @@ footer #elements-footer-right .footer-redes p {
   }
 }
 .section-servicos .servicos-cards-container {
-  width: 1220px;
+  width: 90vw;
+  max-width: 1220px;
   height: calc(100% - 80px);
+  margin: 0 auto;
   margin-top: 40px;
 }
 .section-servicos .servicos-cards-container .servicos-content {
   width: 100%;
   height: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 40px;
   flex-direction: column;
 }
 @media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 900px) {
   .section-servicos .servicos-cards-container .servicos-content {
     flex-direction: row;
     height: 595px;
@@ -1292,30 +1299,42 @@ footer #elements-footer-right .footer-redes p {
   order: 1;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 900px) {
   .section-servicos .servicos-cards-container .servicos-content .servicos-content-card {
     order: 0;
+    width: 420px;
+    height: 420px;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content .servicos-content-card {
     width: 510px;
     height: 510px;
-    margin: 0;
   }
 }
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-card img {
   position: absolute;
-  width: 120px;
+  width: 80px;
   height: auto;
   bottom: 40px;
-  right: -113px;
+  right: -75px;
   z-index: 4;
   display: none;
 }
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 900px) {
   .section-servicos .servicos-cards-container .servicos-content .servicos-content-card img {
     display: block;
   }
 }
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content .servicos-content-card img {
+    width: 120px;
+    right: -113px;
+  }
+}
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-text {
-  width: calc(100% - 510px);
+  width: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -1323,9 +1342,14 @@ footer #elements-footer-right .footer-redes p {
   align-items: center;
   order: 2;
 }
-@media screen and (min-width: 1220px) {
+@media screen and (min-width: 900px) {
   .section-servicos .servicos-cards-container .servicos-content .servicos-content-text {
     order: 0;
+  }
+}
+@media screen and (min-width: 1220px) {
+  .section-servicos .servicos-cards-container .servicos-content .servicos-content-text {
+    width: calc(100% - 510px);
   }
 }
 .section-servicos .servicos-cards-container .servicos-content .servicos-content-text .servicos-content-title {
@@ -1423,7 +1447,12 @@ footer #elements-footer-right .footer-redes p {
   -webkit-transform: scaleX(-1);
   -o-transform: scaleX(-1);
   transform: scaleX(-1);
-  left: -113px;
+  left: -75px;
+}
+@media screen and (min-width: 1220px) {
+  .servicos-cards-vaninvertida {
+    left: -113px;
+  }
 }
 .email {
   width: 100vw;

@@ -1,9 +1,14 @@
 .certificacoes {
     width: 100vw;
-    height: 400px;
+    height: auto;
     background-color: #1E201F;
     position: relative;
     z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 
     .certificacoes-h3-container{
         display: flex;
@@ -15,12 +20,12 @@
         border-image: linear-gradient(90deg, rgba(148, 0, 0,1) 70%, rgba(0,212,255,0) 100%);
         border-image-slice: 1;
         width: 226px;
-        margin: 0 auto;
         padding-top: 30px;
+        
 
         @media screen and (min-width: 540px) {
             width: 285px;
-            height: 70px;
+            height: auto;
         }
 
         h3{
@@ -37,8 +42,11 @@
 
     .certificacoes-container{
         width: 1220px;
-        height: 300px;
-        margin: 0 auto;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
 
         ul{
             width: 100%;
@@ -46,6 +54,27 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            margin-top: 40px;
+            padding-bottom: 40px;
+
+            @media screen and (max-width: 1261.5px) {
+                gap: 0px;
+            }
+
+            @media screen and (max-width: 1230.5px) {
+                width: auto;
+                height: 70%;
+                gap: 40px;
+            }
+
+            @media screen and (max-width: 1170.5px) {
+                width: 80%;
+                height: 50%; 
+            }   
+
+            @media screen and (max-width: 992.5px) {
+                flex-direction: column;
+            }
 
             li{
                 width: 230px;
@@ -53,6 +82,16 @@
                 background-color: #ffffff;
                 border-radius: 20px;
                 box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
+                @media screen and (max-width: 1261.5px) {
+                    height: 130px;
+                    width: 200px;
+                }
+
+                @media screen and (max-width: 992.5px) {
+                    width: 230px;
+                    height: 160px;
+                }
 
                 img{
                     width: 100%;

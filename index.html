@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="whatsapp">
-        <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank">
+        <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank">
             <img src="./public/whatsappBlack.png" alt="WhatsApp">
         </a>
     </div>
@@ -25,7 +25,7 @@
             <i class="fas fa-phone i-inf"></i>
             <p class="text-nav-info"> (11) 99303-9003</p>
             <a href="https://www.instagram.com/firstnorthlocadora/" target="_blank"><i class="fa-brands fa-instagram i-social"></i></a>
-            <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp i-social i-social2"></i></a>
+            <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp i-social i-social2"></i></a>
         </div>
     </div>
     <aside class="aside-nav display-toggle">
@@ -33,11 +33,9 @@
             <i class="fa-solid fa-xmark aside-x"></i>
             <ul>
                <a href="#home" class="aside-a"><li>HOME</li></a>
-                <li class="aside-a">
-                    SERVIÇOS 
-                </li>
-                <a href="#sobre" class="aside-a"><li>FROTAS</li></a>
-                <a href="#parceiros" class="aside-a"><li>PARCEIROS</li></a>
+                <a href="#servicos" class="aside-a"><li>SERVIÇOS</li></a>
+                <a href="#frota" class="aside-a"><li>FROTAS</li></a>
+                <a href="#clientes" class="aside-a"><li>PARCEIROS</li></a>
                 <a href="#contato" class="aside-a"><li>CONTATO</li></a>
             </ul>
             <a href="tel:+55-11-954445544" class="a-call" target="_blank">
@@ -59,29 +57,37 @@
         <div class="nav-1220">
             <img src="./public/logo.png" alt="" srcset="">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href="">Frota</a></li>
-                <li><a href="">Parceiros</a></li>
-                <li><a href="">Contato</a></li>
-                <li><div class="btn-call"><i class="fas fa-phone"></i> (11) 99303-9003</div></li>
+                <li><a class="nav-li-a" id="#home">Home</a></li>
+                <li><a class="nav-li-a" id="#servicos">Serviços</a></li>
+                <li><a class="nav-li-a" id="#frota">Frota</a></li>
+                <li><a class="nav-li-a" id="#clientes">Parceiros</a></li>
+                <li><a class="nav-li-a" id="#contato">Contato</a></li>
+                <li>
+                    <a href="tel:+55-11-993039003" target="_blank">
+                        <div class="btn-call"><i class="fas fa-phone"></i> (11) 99303-9003</div>
+                    </a>
+                </li>
                 <i class="fa-solid fa-bars menu-icon"></i>
             </ul>
         </div>
     </nav>
     <main>
-        <div class="main">
+        <div class="main" id="home">
             <div class="main-textos"  data-anime="top">
                 <h1>Aluguel de Vans em SP</h1>
                 <p>O melhor serviço de transporte para suas necessidades</p>
             </div>
             <div class="main-buttons"  data-anime="left">
-                <button class="main-button">
-                    Certificações
-                </button>
-                <button class="main-button">
-                    Diferenciais
-                </button>
+                <a href="#certificacoes">
+                    <button class="main-button">
+                        Certificações
+                    </button>
+                </a>
+                <a href="#servicos">
+                    <button class="main-button">
+                        Diferenciais
+                    </button>
+                </a>
             </div>
             <div class="arrow">
                 <img src="./public/arrow-down.png" alt="" class="arrow-down">
@@ -89,7 +95,7 @@
             <div class="bg"></div>
         </div>
     </main>
-    <section class="section-servicos">
+    <section class="section-servicos" id="servicos">
         <div class="servicos-h2-container">
             <h2>Serviços</h2>
         </div>
@@ -157,7 +163,7 @@
             </div>
         </div>
     </section>
-    <section class="frota">
+    <section class="frota" id="frota">
         <div class="frota-bg-black">
             <div class="frota-h3-container">
                 <h3>Frotas</h3>
@@ -219,7 +225,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-frota">
         <path fill="#1E201F" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,272C384,277,480,267,576,240C672,213,768,171,864,165.3C960,160,1056,192,1152,218.7C1248,245,1344,267,1392,277.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
     </svg>
-    <section class="vantagens">
+    <section class="vantagens" id="vantagens">
         <div class="vantagens-h3-container">
             <h3>Vantagens</h3>
         </div>
@@ -252,7 +258,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-certificacoes">
         <path fill="#1E201F" fill-opacity="1" d="M0,192L40,202.7C80,213,160,235,240,234.7C320,235,400,213,480,192C560,171,640,149,720,128C800,107,880,85,960,80C1040,75,1120,85,1200,96C1280,107,1360,117,1400,122.7L1440,128L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path>
       </svg>
-    <section class="certificacoes">
+    <section class="certificacoes" id="certificacoes">
         <div class="certificacoes-h3-container">
             <h3>Certificações</h3>
         </div>
@@ -266,7 +272,7 @@
             </ul>
         </div>
     </section>
-    <section class="clientes">
+    <section class="clientes" id="clientes">
         <div class="container-clientes">
             <div class="cliente-h3-container">
                 <h3>Parceiros</h3>
@@ -313,7 +319,7 @@
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 180 1440 140" class="svg-email" height="160">
         <path fill="#1E201F" fill-opacity="1" d="M0,224L120,224C240,224,480,224,720,240C960,256,1200,288,1320,304L1440,320L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
     </svg> 
-    <section class="email">
+    <section class="email" id="contato">
         <div class="email-h3-container">
             <h3>Contato</h3>
         </div>
@@ -362,7 +368,7 @@
                 <div class="footer-redes">
                     <p>Entre em contato também pelas nossas redes sociais</p>
                     <a href="https://www.instagram.com/firstnorthlocadora/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011954445544&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://api.whatsapp.com/send?l=pt&phone=55011993039003&text=Bom dia, eu vim pelo site." target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
                 </div>
             </div>
         </div>

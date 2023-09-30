@@ -571,7 +571,7 @@ nav .nav-1220 ul {
   align-items: center;
   justify-content: space-between;
 }
-nav .nav-1220 ul li a {
+nav .nav-1220 ul li .nav-li-a {
   text-decoration: none;
   color: #1E201F;
   font-size: 1.15em;
@@ -579,14 +579,17 @@ nav .nav-1220 ul li a {
   font-weight: 600;
   display: none;
 }
-nav .nav-1220 ul li a:hover {
+nav .nav-1220 ul li .nav-li-a:hover {
   color: #0a0a4c;
   border-bottom: 1px solid #940000;
 }
 @media screen and (min-width: 1020px) {
-  nav .nav-1220 ul li a {
+  nav .nav-1220 ul li .nav-li-a {
     display: flex;
   }
+}
+nav .nav-1220 ul li a {
+  text-decoration: none;
 }
 nav .nav-1220 ul li .btn-call {
   background-color: #940000;
@@ -602,6 +605,7 @@ nav .nav-1220 ul li .btn-call {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   display: none;
+  transition: 0.6s;
 }
 @media screen and (min-width: 768px) {
   nav .nav-1220 ul li .btn-call {
@@ -610,6 +614,9 @@ nav .nav-1220 ul li .btn-call {
 }
 nav .nav-1220 ul li .btn-call i {
   margin-right: 8px;
+}
+nav .nav-1220 ul li .btn-call:hover {
+  background-color: #1E201F;
 }
 nav .nav-1220 ul .menu-icon {
   display: block;
@@ -979,11 +986,14 @@ footer .content-footer #elements-footer-left .footer-nav ul li {
 }
 footer .content-footer #elements-footer-left .footer-nav a {
   text-decoration: none;
-  font-family: 'Jost';
+  font-family: 'Karla', sans-serif;
   color: #fff;
 }
 footer .content-footer #elements-footer-left .footer-nav a:hover {
-  color: #2424a8;
+  transform: scale(1.2);
+}
+footer .content-footer #elements-footer-left .footer-nav a li {
+  font-family: 'Karla', sans-serif;
 }
 footer #elements-footer-right {
   width: 50%;

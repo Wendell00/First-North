@@ -54,3 +54,19 @@ window.addEventListener('scroll', function(){
 // var elementDate = document.querySelector('.year-date');
 // elementDate.innerText = anoAtual;
 
+const elementosAClick = document.querySelectorAll('.a-click');
+
+// Adicione um ouvinte de evento de clique a cada elemento
+elementosAClick.forEach(function (elemento) {
+  elemento.addEventListener('click', function () {
+    // Obtém a posição da seção de contato em relação ao topo da página
+    const contatoSection = document.getElementById('contato');
+    const contatoSectionTop = contatoSection.offsetTop;
+
+    // Rola a página para a posição da seção de contato
+    window.scrollTo({
+      top: contatoSectionTop,
+      behavior: 'smooth' // Rola suavemente
+    });
+  });
+});
